@@ -1,0 +1,49 @@
+# Importing random module
+import random 
+
+# Computer and User are selecting their moves
+user_choice = input("Pick your move[Rock, Paper, Scissor]:")
+
+# random.choice(["Rock", "Paper", "Scissor"])
+# This command will pick a string randomly from 'Rock', 'Paper', 'Scissor' and assign it to the computer choice variable
+
+computer_choice = random.choice(["rock", "paper", "scissor"])
+
+# Print the taken input
+print('user_choice :' , user_choice)
+print("computer_choice:" , computer_choice)
+
+# Conditions
+
+if user_choice =="rock" and  computer_choice == "rock":
+  print("DRAW")
+elif user_choice =="rock" and  computer_choice == "paper":
+  print("COMPUTER WON")
+elif user_choice =="rock" and  computer_choice == "scissor":
+  print("USER WON")
+elif user_choice =="paper" and  computer_choice == "rock":
+  print("USER WON")
+elif user_choice =="paper" and  computer_choice == "paper":
+  print("DRAW")
+elif user_choice =="paper" and  computer_choice == "scissor":
+  print("COMPUTER WON")
+elif user_choice =="scissor" and  computer_choice == "rock":
+  print("COMPUTER WON")
+elif user_choice =="scissor" and  computer_choice == "paper":
+  print("USER WON")
+elif user_choice =="scissor" and  computer_choice == "scissor":
+  print("DRAW")
+else:
+  print("Invalid case")
+
+
+
+
+
+
+
+
+
+
+
+
